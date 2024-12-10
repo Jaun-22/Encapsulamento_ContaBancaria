@@ -67,7 +67,7 @@ public class ContaBancaria {
 
     //Sacar
     public void sacar(double valor) {
-        if (valor > 0) {
+        if (valor > 0 && saldo <=0) {
             this.saldo -= valor; //Saldo - valor sacado
             System.out.println("Saque de " + valor + " Realizado com suceso");
             System.out.println("Seu saldo atual é de " + this.saldo);
